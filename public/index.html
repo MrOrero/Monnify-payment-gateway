@@ -40,5 +40,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script type="text/javascript" src="https://sdk.monnify.com/plugin/monnify.js"></script>
+  <p>Total order is ₦10</p>
+  <form method="POST">
+    <script src="https://checkout.paga.com/checkout/?w=150&h=40" 
+            data-public_key="23A3E317-7382-4032-94DE-50BA4B653EE5" 
+            data-amount="10.00" 
+            data-currency="NGN" 
+            data-charge_url="https://mymarket/payment/complete" 
+            data-phone_number="+2348063334156" 
+            data-email="testemail2@gmail.com"
+            data-button_label="Make Payment"
+  >
+    </script>
+  </form>
 </html>
